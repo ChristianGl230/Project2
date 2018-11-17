@@ -52,6 +52,12 @@
 	move $a0, $t4
 	j checkString
 	
+	emptyError:
+	li $v0, 4
+	la $a0, emptyErrorMessage
+	syscall
+	j exit
+	
 	
 
 
