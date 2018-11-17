@@ -67,6 +67,7 @@
 	checkString:
 	lb $t5, 0($a0)
 	beqz $t5, conversions
+	beq $t5, $t1, conversions  
 
 
 	
