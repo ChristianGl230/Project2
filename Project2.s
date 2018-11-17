@@ -46,7 +46,8 @@
 	j lengthLoop
 	
 	done:
-	beqz $t0, emptyError 
+	beqz $t0, emptyError
+	slti $t3, $t0, 5
 	
 	
 
