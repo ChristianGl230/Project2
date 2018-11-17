@@ -69,6 +69,8 @@
 	beqz $t5, conversions
 	beq $t5, $t1, conversions 
 	slti $t6, $t5, 48
+	bne $t6, $zero, baseError
+	slti $t6, $t5, 58   
 
 
 	
