@@ -64,6 +64,10 @@
 	syscall
 	j exit
 	
+	checkString:
+	lb $t5, 0($a0)
+
+	
 	
 
 
