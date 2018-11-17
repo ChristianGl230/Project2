@@ -58,6 +58,12 @@
 	syscall
 	j exit
 	
+	lengthError:
+	li $v0, 4
+	la $a0, lengthErrorMessage
+	syscall
+	j exit
+	
 	
 
 
