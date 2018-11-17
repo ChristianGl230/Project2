@@ -33,6 +33,7 @@
 	j removeLeadingSpace
 	
 	checkLength:
+	addi $t0, $t0, 0
 
 
 
