@@ -112,6 +112,10 @@
 	bne $t6, $zero, Upletters
 	slti $t6, $s4, 121
 	bne $t6, $zero, Lowletters
+	
+	Numbers:
+	addi $s4, $s4, -48
+	j nextStep
 
 
 
