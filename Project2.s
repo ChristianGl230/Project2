@@ -111,6 +111,11 @@
 	Upletters:
 	addi $s4, $s4, -55
 	j nextStep
+	
+	Lowletters:
+	addi $s4, $s4, -87
+
+
 
 
 
