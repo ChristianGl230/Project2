@@ -36,6 +36,9 @@
 	addi $t0, $t0, 0
 	addi $t1, $t1, 10
 	add $t4, $t4, $a0
+	
+	lengthLoop:
+	lb $t2, 0($a0)
 
 
 
