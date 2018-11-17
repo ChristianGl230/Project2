@@ -39,6 +39,7 @@
 	
 	lengthLoop:
 	lb $t2, 0($a0)
+	beqz $t2, done  
 
 
 
