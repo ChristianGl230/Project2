@@ -91,6 +91,10 @@
 	la $a0, baseErrorMessage
 	syscall
 	j exit
+	
+	conversions:
+	move $a0, $t4
+	addi $t7, $t7, 0 
 
 
 
