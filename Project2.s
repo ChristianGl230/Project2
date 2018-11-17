@@ -41,6 +41,9 @@
 	lb $t2, 0($a0)
 	beqz $t2, done  
 	beq $t2, $t1, done
+	addi $a0, $a0, 1
+	
+	
 
 
 
