@@ -7,7 +7,7 @@
 
     main:
 
-	li $v0, 8       #Obtain user's input as text 
+	li $v0, 8   
 
 	la $a0, userInput
 
@@ -16,4 +16,23 @@
 	
 	removeLeadingSpace: 
 	li $t8, 32
+	lb $t9, 0($a0)
+
+	beq $t8, $t9, removeFirst
+
+	move $t9, $a0
+
+	j checkLength
+
+
+
+	removeFirst:
+
+	addi $a0, $a0, 1
+
+	j removeLeadingSpace
+	
+	checkLength:
+
+
 
