@@ -8,28 +8,19 @@
     main:
 
 	li $v0, 8   
-
 	la $a0, userInput
-
 	li $a1, 60
 	syscall
 	
 	removeLeadingSpace: 
 	li $t8, 32
 	lb $t9, 0($a0)
-
 	beq $t8, $t9, removeFirst
-
 	move $t9, $a0
-
 	j checkLength
 
-
-
 	removeFirst:
-
 	addi $a0, $a0, 1
-
 	j removeLeadingSpace
 	
 	checkLength:
@@ -115,6 +106,10 @@
 	
 	Numbers:
 	addi $s4, $s4, -48
+	j nextStep
+	
+	Upletters:
+	addi $s4, $s4, -55
 	j nextStep
 
 
