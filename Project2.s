@@ -13,3 +13,6 @@
 
 	li $a1, 60
 	syscall
+	
+	removeLeadingSpace: 
+
