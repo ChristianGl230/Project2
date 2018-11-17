@@ -15,4 +15,5 @@
 	syscall
 	
 	removeLeadingSpace: 
+	li $t8, 32
 
