@@ -49,6 +49,8 @@
 	beqz $t0, emptyError
 	slti $t3, $t0, 5
 	beqz $t3, lengthError
+	move $a0, $t4
+	j checkString
 	
 	
 
