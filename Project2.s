@@ -1,0 +1,9 @@
+.data
+
+    emptyErrorMessage:	.asciiz "Input is empty."
+
+    lengthErrorMessage: .asciiz "Input is too long."
+
+    baseErrorMessage:   .asciiz "Invalid base-34 number."
+
+    userInput:		.space 60
